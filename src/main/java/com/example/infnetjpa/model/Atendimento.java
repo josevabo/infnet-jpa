@@ -31,6 +31,13 @@ public class Atendimento {
         this.dataHora = dataHora;
     }
 
+    public Atendimento(Medico medico, Paciente paciente, LocalDateTime dataHora) {
+        this.id = id;
+        this.medico = medico;
+        this.paciente = paciente;
+        this.dataHora = dataHora;
+    }
+
     public Long getId() {
         return id;
     }
@@ -61,5 +68,15 @@ public class Atendimento {
 
     public void setDataHora(LocalDateTime dataHora) {
         this.dataHora = dataHora;
+    }
+
+    @Override
+    public String toString() {
+        return "Atendimento{" +
+                "id=" + id +
+                ", medico=" + medico +
+                ", paciente=" + paciente +
+                ", dataHora=" + dataHora +
+                '}';
     }
 }

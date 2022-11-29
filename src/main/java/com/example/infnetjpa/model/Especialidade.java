@@ -20,6 +20,9 @@ public class Especialidade {
     public Especialidade(Long codigo) {
         this.codigo = codigo;
     }
+    public Especialidade(String nome) {
+        this.nome = nome;
+    }
 
     public Especialidade(Long codigo, String nome) {
         this.codigo = codigo;

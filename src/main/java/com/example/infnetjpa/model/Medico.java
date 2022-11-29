@@ -38,10 +38,10 @@ public class Medico {
         this.id = id;
     }
 
-    public Medico(Long id, String nome, String crm) {
+    public Medico(Long id, String nome, Especialidade especialidade) {
         this.id = id;
         this.nome = nome;
-        this.crm = crm;
+        this.especialidade = especialidade;
     }
 
     public Medico(Long id, String nome, String crm, Especialidade especialidade) {

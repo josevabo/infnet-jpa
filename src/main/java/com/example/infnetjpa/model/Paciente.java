@@ -26,6 +26,11 @@ public class Paciente {
 
     public Paciente() {
     }
+    public Paciente(String nome, String cpf, LocalDate dataNasc) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNasc = dataNasc;
+    }
 
     public Paciente(Long id, String nome, String cpf, LocalDate dataNasc) {
         this.id = id;
@@ -64,5 +69,15 @@ public class Paciente {
 
     public void setDataNasc(LocalDate dataNasc) {
         this.dataNasc = dataNasc;
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNasc=" + dataNasc +
+                '}';
     }
 }
